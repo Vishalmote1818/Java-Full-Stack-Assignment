@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-/* =====================================================
+
    1. Check if age is greater than 18 → Adult
-   ===================================================== */
+
+      
 class AdultCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,10 +15,10 @@ class AdultCheck {
     }
 }
 
-/* =====================================================
-   2. Check whether a number is divisible by 10
-   ===================================================== */
-class DivisibleBy10 {
+
+2. Check whether a number is divisible by 10
+
+   class DivisibleBy10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
@@ -29,9 +30,9 @@ class DivisibleBy10 {
     }
 }
 
-/* =====================================================
+
    3. Temperature above 30°C → Hot Day
-   ===================================================== */
+  
 class HotDay {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -42,10 +43,9 @@ class HotDay {
     }
 }
 
-/* =====================================================
    4. Even or Odd
-   ===================================================== */
-class EvenOdd {
+
+      class EvenOdd {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
@@ -57,10 +57,9 @@ class EvenOdd {
     }
 }
 
-/* =====================================================
    5. Leap Year Check
-   ===================================================== */
-class LeapYear {
+
+      class LeapYear {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int year = sc.nextInt();
@@ -72,9 +71,9 @@ class LeapYear {
     }
 }
 
-/* =====================================================
+
    6. Positive or Negative
-   ===================================================== */
+
 class PositiveNegative {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -87,9 +86,9 @@ class PositiveNegative {
     }
 }
 
-/* =====================================================
+
    7. Grade Based on Marks
-   ===================================================== */
+
 class GradeSystem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -108,9 +107,9 @@ class GradeSystem {
     }
 }
 
-/* =====================================================
+
    8. Day of Week (1–7)
-   ===================================================== */
+
 class DayOfWeek {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -129,9 +128,9 @@ class DayOfWeek {
     }
 }
 
-/* =====================================================
+
    9. Triangle Type
-   ===================================================== */
+
 class TriangleType {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -148,9 +147,9 @@ class TriangleType {
     }
 }
 
-/* =====================================================
+
    10. Age Group Classification
-   ===================================================== */
+
 class AgeGroup {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -167,10 +166,10 @@ class AgeGroup {
     }
 }
 
-/* =====================================================
+
    11. Temperature Classification
-   ===================================================== */
-class TemperatureClassify {
+
+   class TemperatureClassify {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int temp = sc.nextInt();
@@ -186,10 +185,10 @@ class TemperatureClassify {
     }
 }
 
-/* =====================================================
+
    12. Positive, Negative or Zero
-   ===================================================== */
-class PosNegZero {
+
+   class PosNegZero {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
@@ -203,9 +202,9 @@ class PosNegZero {
     }
 }
 
-/* =====================================================
+
    13. Voting & Contest Eligibility
-   ===================================================== */
+ 
 class VotingEligibility {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -223,9 +222,9 @@ class VotingEligibility {
     }
 }
 
-/* =====================================================
+
    14. Leap Year & Century Year
-   ===================================================== */
+
 class LeapCentury {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -241,9 +240,9 @@ class LeapCentury {
     }
 }
 
-/* =====================================================
+
    15. Even & Greater than 50
-   ===================================================== */
+
 class EvenGreater50 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
