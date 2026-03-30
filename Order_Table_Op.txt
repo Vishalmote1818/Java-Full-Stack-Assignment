@@ -1,0 +1,76 @@
+create database tka_db;
+
+use tka_db;
+
+Create table orders(order_id INT PRIMARY KEY, customer_name VARCHAR(20), city VARCHAR(20), product_name VARCHAR(20),  category VARCHAR(20), price decimal, quantity int, order_date DATE, payment_mode VARCHAR(20), order_status VARCHAR(20));
+
+INSERT INTO orders VALUES
+(2, 'Amit', 'Pune', 'Face Wash', 'Cosmetics', 250, 5, '2026-01-15', 'online', 'Delivered'),
+(3, 'Sneha', 'Mumbai', 'Laptop', 'Electronics', 55000, 1, '2026-02-10', 'card', 'Delivered'),
+(4, 'Rahul', 'Nagpur', 'Shoes', 'Fashion', 2000, 2, '2026-03-05', 'cash', 'Pending'),
+(5, 'Priya', 'Delhi', 'Shirt', 'Clothing', 1500, 1, '2026-01-25', 'online', 'Delivered'),
+(6, 'Karan', 'Bangalore', 'Mobile Phone', 'Electronics', 20000, 1, '2026-02-18', 'upi', 'Cancelled'),
+(7, 'Neha', 'Hyderabad', 'Perfume', 'Cosmetics', 1200, 3, '2026-03-12', 'card', 'Delivered'),
+(8, 'Rohit', 'Chennai', 'T-Shirt', 'Fashion', 800, 4, '2026-01-30', 'cash', 'Delivered'),
+(9, 'Anjali', 'Kolkata', 'Headphones', 'Electronics', 3000, 2, '2026-02-22', 'upi', 'Pending'),
+(10, 'Suresh', 'Jaipur', 'Watch', 'Accessories', 2500, 1, '2026-03-01', 'online', 'Delivered'),
+(11, 'Pooja', 'Ahmedabad', 'Lipstick', 'Cosmetics', 500, 6, '2026-03-15', 'card', 'Delivered');
+
+-- SELECT * FROM orders;
+
+-- Display all order of customer from punne ..
+
+SELECT * FROM orders WHERE city='Pune';
+
+
+-- Show all orders where price greater than 5000
+
+SELECT * FROM orders WHERE price> 5000;
+
+-- Sellect all orders where payment mode is UPI
+
+SELECT * FROM orders WHERE payment_mode='upi';
+
+-- Display all orders where order_status is delivered
+
+SELECT * FROM orders WHERE order_status='Delivered';
+
+-- show orders where quantity is between 2 and 5
+
+SELECT * FROM orders WHERE quantity BETWEEN 2 AND 5;
+
+-- Display orders where category is electronics or clothing
+
+SELECT * FROM orders 
+WHERE category = 'Electronics' OR category = 'Clothing';
+
+
+-- Find orders where customer name starts with A 
+
+SELECT * FROM orders WHERE customer_name LIKE 'A%';
+
+-- Show orders where product name contains phone
+
+SELECT * FROM orders WHERE product_name LIKE '%Phone%';
+
+
+-- Display all orders sorted by price in descending order
+
+SELECT * FROM orders ORDER BY Price DESC;
+
+-- Show orders sorted by order date(latest first)alter
+
+SELECT * FROM orders ORDER BY order_date DESC;
+
+-- Find total revenue (Price * quantity)
+
+SELECT order_id, (Price*quantity) AS Total_Price FROM orders ;
+
+-- Average price of product
+
+SELECT AVG(Price) AS Average_Price FROM orders;
+
+-- Count how many oders are placed;
+
+SELECT COUNT(order_id) AS Total_Order FROM orders;
+
